@@ -8,6 +8,10 @@ body, h1, h2, p, button {
 
 /* Body Styling */
 body {
+    background-image: url("image.png"); 
+    background-position: center; 
+    background-size: cover;
+    position: relative;
     background-color: #f4f4f9;
     display: flex;
     justify-content: center;
