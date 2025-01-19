@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <header class="scoreboard-header">
+            <h1>Basketball Scoreboard</h1>
+        </header>
+        <div class="teams">
+            <div class="team">
+                <h2 class="team-name" id="team1-name">Team A</h2>
+                <p class="score" id="team1-score">0</p>
+                <button class="btn" onclick="updateScore('team1', 1)">+1</button>
+                <button class="btn" onclick="updateScore('team1', -1)">-1</button>
+            </div>
+            <div class="team">
+                <h2 class="team-name" id="team2-name">Team B</h2>
+                <p class="score" id="team2-score">0</p>
+                <button class="btn" onclick="updateScore('team2', 1)">+1</button>
+                <button class="btn" onclick="updateScore('team2', -1)">-1</button>
+            </div>
+        </div>
+        <footer class="scoreboard-footer">
+            <button class="reset-btn" onclick="resetScores()">Reset</button>
+        </footer>
+    </div>
+
+    <script src="index.js">
+        // function updateScore(team, value) {
+        //     const scoreElement = document.getElementById(`${team}-score`);
+        //     let currentScore = parseInt(scoreElement.textContent, 10);
+        //     currentScore += value;
+        //     if (currentScore < 0) currentScore = 0; // Prevent negative scores
+        //     scoreElement.textContent = currentScore;
+        // }
+
+        // function resetScores() {
+        //     document.getElementById('team1-score').textContent = 0;
+        //     document.getElementById('team2-score').textContent = 0;
+        // }
+    </script>
+</body>
+</html>
